@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Maza';
+    src: url('../fonts/MAZ55.woff2') format("woff2-variations");
+    font-weight: 400;
+    font-display: swap;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('../fonts/TenorSans-Regular.woff2') format("woff2-variations");
+    font-weight: 100 1000;
+    font-display: swap;
+    font-optical-sizing: auto;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.header-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header-wrapper__contacts-container {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 34px;
+
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.header-wrapper__left-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.left-wrapper__block {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.left-wrapper__icon-wrapper {
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.contacts-container__icon {
+    position: relative;
+    width: auto;
+    height: 14px;
+    opacity: 0.5;
+}
+
+.contacts-container__text {
+    position: relative;
+
+    font-family: 'Maza';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+
+    color: #343A3F;
+}
+
+.header-wrapper__middle-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.header-wrapper__right-wrapper {
+    position: relative;
+    width: 198px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
