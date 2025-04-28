@@ -36,6 +36,7 @@ p {
     position: relative;
     width: calc(100% - 80px);
     height: 34px;
+    min-height: 34px;
 
     background-color: #f4f4f4;
 
@@ -116,4 +117,17 @@ p {
     display: flex;
     flex-direction: row;
     gap: 18px;
+}
+
+.header-wrapper__navigation-wrapper {
+    position: relative;
+    width: calc(100% - 80px);
+    height: 146px;
+    padding: 16px 40px 0px 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
 }
