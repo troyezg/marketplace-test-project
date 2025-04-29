@@ -16,6 +16,8 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -46,6 +48,38 @@ h6 {
     margin: 0;
 }
 
+.scrolled-active {
+    height: 100px !important;
+    transition: all 0.15s ease-in-out !important;
+
+    .header-wrapper__contacts-container {
+        overflow: hidden !important;
+        height: 0px !important;
+        min-height: 0px !important;
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .header-wrapper__bottom-wrapper {
+        overflow: hidden !important;
+        height: 0px !important;
+        min-height: 0px !important;
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .header-wrapper__navigation-wrapper {
+        padding: 0px 40px 0px 50px !important;
+        transition: all 0.15s ease-in-out !important;
+        gap: 25px !important;
+        align-items: center !important;
+        width: calc(100% - 90px) !important;
+    }
+
+    .header-wrapper__rows-wrapper {
+        height: 100px !important;
+        justify-content: center !important;
+        gap: 0px;
+    }
+}
 
 .header-wrapper {
     position: fixed;
@@ -56,6 +90,13 @@ h6 {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    z-index: 3;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.header-wrapper__logo {
+    position: relative;
 }
 
 .header-wrapper__contacts-container {
@@ -71,6 +112,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
+    transition: all 0.15s ease-in-out !important;
 }
 
 .header-wrapper__left-wrapper {
@@ -411,6 +453,7 @@ h6 {
     display: flex;
     flex-direction: row;
     gap: 168px;
+    transition: all 0.25s ease-in-out;
 }
 
 .header-wrapper__offers-wrapper {
@@ -542,7 +585,6 @@ h6 {
     position: relative;
     width: 100%;
     height: 439px;
-    top: 180px;
     overflow: hidden;
 
     background: linear-gradient(95.31deg, #672870 20%, #4FE0FF 100%);
@@ -628,4 +670,11 @@ h6 {
     right: -201px;
     top: -99px;
     z-index: 0;
+}
+
+.other-content {
+    width: 100%;
+    height: 1600px;
+    background-color: #fafafa;
+    overflow: hidden;
 }

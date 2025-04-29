@@ -9,8 +9,8 @@
     <link rel="icon" href="./images/logo.svg" type="image/svg">
 </head>
 <body>
-    <header class="header-wrapper">
-        <div class="header-wrapper__contacts-container">
+    <header class="header-wrapper" id="header">
+        <div class="header-wrapper__contacts-container" id="header-contacts">
             <div class="header-wrapper__left-wrapper">
                 <div class="left-wrapper__block">
                     <div class="left-wrapper__icon-wrapper">
@@ -35,7 +35,7 @@
                 <p class="contacts-container__text hover-animation">Контакты</p>
             </nav>
         </div>
-        <div class="header-wrapper__navigation-wrapper">
+        <div class="header-wrapper__navigation-wrapper" id="header-navigation">
             <img class="header-wrapper__logo" src="./images/logo.svg" alt="Logo image" />
             <div class="header-wrapper__rows-wrapper">
                 <div class="header-wrapper__scrollable-wrapper">
@@ -118,7 +118,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="header-wrapper__bottom-wrapper">
+                <div class="header-wrapper__bottom-wrapper" id="header-bottom-block">
                     <div class="header-wrapper__offers-wrapper">
                         <button class="offers-wrapper__button">
                             <img class="offers-wrapper__icon" src="./images/fire-icon.svg" alt="Fire icon" />
@@ -152,6 +152,9 @@
             </div>
         </div>
     </header>
+    <section class="header-wrapper" style="position: relative; z-index: 0;">
+
+    </section>
     <section class="landing-section">
         <div class="landing-section__title-wrapper">
             <h2 class="landing-section__title">Отправляйся в приключения с нашими эпическими лут-корзинами и наборами!</h2>
@@ -160,5 +163,9 @@
         </div>
         <img class="landing-section__image" src="./images/gamepad-image.png" alt="Gamepad image" />
     </section>
+    <section class="other-content">
+
+    </section>
 </body>
+<script src="./js/index.js"></script>
 </html>
