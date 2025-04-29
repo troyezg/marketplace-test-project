@@ -571,4 +571,5 @@ h6 {
     position: absolute;
     right: -201px;
     top: -99px;
+    z-index: 0;
 }
