@@ -120,23 +120,23 @@
                 </div>
                 <div class="header-wrapper__bottom-wrapper" id="header-bottom-block">
                     <div class="header-wrapper__offers-wrapper">
-                        <button class="offers-wrapper__button">
+                        <button class="offers-wrapper__button" onclick="SmallPopUp(1)" id="offer-1">
                             <img class="offers-wrapper__icon" src="./images/fire-icon.svg" alt="Fire icon" />
                             <span class="offers-wrapper__text">Акции</span>
                         </button>
-                        <button class="offers-wrapper__button">
+                        <button class="offers-wrapper__button" onclick="SmallPopUp(2)" id="offer-2">
                             <img class="offers-wrapper__icon" src="./images/lighting-icon.svg" alt="Fire icon" />
                             <span class="offers-wrapper__text">Горячее предложение</span>
                         </button>
-                        <button class="offers-wrapper__button">
+                        <button class="offers-wrapper__button" onclick="SmallPopUp(3)" id="offer-3">
                             <img class="offers-wrapper__icon" src="./images/small-chest-icon.svg" alt="Fire icon" />
                             <span class="offers-wrapper__text">Подарочные наборы</span>
                         </button>
-                        <button class="offers-wrapper__button">
+                        <button class="offers-wrapper__button" onclick="SmallPopUp(4)" id="offer-4">
                             <img class="offers-wrapper__icon" src="./images/scroll-icon.svg" alt="Fire icon" />
                             <span class="offers-wrapper__text">События</span>
                         </button>
-                        <button class="offers-wrapper__button">
+                        <button class="offers-wrapper__button" onclick="SmallPopUp(5)" id="offer-5">
                             <img class="offers-wrapper__icon" src="./images/troll-icon.svg" alt="Fire icon" />
                             <span class="offers-wrapper__text">Наши бренды</span>
                         </button>
@@ -166,6 +166,12 @@
     <section class="other-content">
 
     </section>
+    <div class="small-popup" id="small-popup">
+        <button class="small-popup__button"><span class="hover-animation">ИгроМИР</span></button>
+        <button class="small-popup__button"><span class="hover-animation">Мероприятия</span></button>
+        <button class="small-popup__button"><span class="hover-animation">Мастер-классы</span></button>
+    </div>
+    <div class="popup-closer" id="popup-closer" onclick="CloseSmallPopUp()" onscroll="CloseSmallPopUp()"></div>
 </body>
 <script src="./js/index.js"></script>
 </html>
