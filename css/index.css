@@ -121,8 +121,15 @@ h6 {
     line-height: 1;
     display: flex;
     align-items: center;
+    transition: color 0.25s ease-in-out;
 
     color: #343A3F;
+}
+
+.hover-animation:hover {
+    color: #4888FF;
+    transition: color 0.25s ease-in-out;
+    cursor: pointer;
 }
 
 .header-wrapper__middle-wrapper {
@@ -285,6 +292,14 @@ h6 {
     border: none;
     outline: none;
     border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+}
+
+.social-box-wrapper__social-box:hover {
+    color: #4888FF;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    background-color: #D4D9DD;
 }
 
 .header-wrapper__language-wrapper {
@@ -375,8 +390,14 @@ h6 {
 
     border-radius: 4px;
     background-color: transparent;
+    transition: color 0.25s ease-in-out;
 }
 
+.chests-wrapper__button:hover {
+    color: #4888FF;
+    transition: color 0.25s ease-in-out;
+    cursor: pointer;
+}
 
 .chests-wrapper__button__icon {
     position: relative;
@@ -418,12 +439,29 @@ h6 {
     outline: none;
     border-radius: 8px;
     padding: 0px 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.offers-wrapper__button:hover { 
+    transition: all 0.25s ease-in-out;
+
+    img {
+        opacity: 1;
+        transition: all 0.25s ease-in-out;
+    }
+
+    span {
+        color: #4888FF;
+        transition: all 0.25s ease-in-out;
+    }
 }
 
 .offers-wrapper__icon {
     position: relative;
     width: 20px;
     height: 20px;
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out;
 }
 
 .offers-wrapper__text {
@@ -438,6 +476,7 @@ h6 {
     align-items: center;
 
     color: #343A3F;
+    transition: all 0.25s ease-in-out;
 }
 
 .header-wrapper__build-pc-button {
@@ -456,12 +495,29 @@ h6 {
     flex-direction: row;
     align-items: center;
     gap: 6px;
+    transition: all 0.25s ease-in-out;
+    background-color: #F4F4F4;
 }
+
+.header-wrapper__build-pc-button:hover { 
+    background-color: #4888FF;
+    transition: all 0.25s ease-in-out;
+
+    svg {
+        color: #ffffff;
+    }
+
+    span {
+        color: #ffffff;
+    }
+}
+
 
 .build-pc-button__icon {
     position: relative;
     width: 16px;
     height: 16px;
+    color: #4888FF;
 }
 
 .build-pc-button__text {
