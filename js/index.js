@@ -1,10 +1,15 @@
 try {
 window.addEventListener('scroll', () => {
     let Header = document.getElementById("header");
-    if (window.scrollY < 100) {
-        Header.className = "header-wrapper";
-    } else {
-        Header.classList.add("scrolled-active");
+    let HeaderSection = document.getElementById("header-section");
+    if (window.innerWidth >= 769) {
+        if (window.scrollY < 100) {
+            Header.className = "header-wrapper";
+            HeaderSection.className = "header-section header-wrapper";
+        } else {
+            Header.classList.add("scrolled-active");
+            HeaderSection.classList.add("scrolled-active");
+        }
     }
 
     if (document.getElementById("small-popup").style.display == 'flex') {
