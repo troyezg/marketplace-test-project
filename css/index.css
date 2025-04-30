@@ -1225,6 +1225,16 @@ h6 {
     border-radius: 6px;
 }
 
+.mobile-popup__pc-button:hover {
+    background: #4888FF;
+    svg {
+        color: #FFFFFF;
+    }
+    span {
+        color: #FFFFFF;
+    }
+}
+
 .pc-button__create-pc-wrapper {
     position: relative;
     width: fit-content;
