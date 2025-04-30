@@ -156,8 +156,7 @@ const ExampleDataTwo = `
 
 }
 
-function MobilePopup() {
-        const mobilePopupHtml = `        <div class="mobile-popup__info-block">
+const mobilePopupHtml = `        <div class="mobile-popup__info-block">
             <div class="mobile-popup__info-block__location-time">
                 <div class="mobile-popup__info-line">
                     <img src="./images/location-icon.svg" class="mobile-popup__icon" alt="Location icon" />
@@ -272,6 +271,9 @@ function MobilePopup() {
             </div>
         </nav>
     `;
+
+function MobilePopup() {
+        
     let popup = document.getElementById('mobile-popup');
     if (popup.style.display == 'flex') {
         popup.style.display = 'none';
@@ -293,7 +295,7 @@ function MobilePopup() {
 }
 
 function MobileOpenCategorie(name) {
-    let title = '<div class="mobile-popup__title-wrapper"><svg class="buttons-wrapper__button__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);"><path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg> <p class="mobile-popup__title">' + name + '</p></div>'
+    let title = '<div class="mobile-popup__title-wrapper"><svg class="buttons-wrapper__button__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);" onclick="MobileBackCategorie()"><path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg> <p class="mobile-popup__title">' + name + '</p></div>'
     let popupButtonsHtml = `
   <div class="mobile-popup__buttons-wrapper">
     <button class="mobile-popup__buttons-wrapper__button" onclick="MobileOpenCategorie('Каталог')">
@@ -356,4 +358,8 @@ function MobileOpenCategorie(name) {
     document.getElementById('mobile-popup').innerHTML = '';
     document.getElementById('mobile-popup').innerHTML += title;
     document.getElementById('mobile-popup').innerHTML += popupButtonsHtml;
+}
+
+function MobileBackCategorie() {
+    document.getElementById('mobile-popup').innerHTML = mobilePopupHtml;
 }
