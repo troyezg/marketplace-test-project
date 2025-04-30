@@ -278,10 +278,16 @@ function MobilePopup() {
         document.body.style.overflow = 'visible';
         popup.style.overflow = 'visible';
         popup.innerHTML = mobilePopupHtml;
+        document.getElementById("mobile-menu-button").style.background = "#4888FF";
+        document.getElementById("mobile-burger-menu").style.display = "block";
+        document.getElementById("mobile-burger-cross").style.display = "none";
     } else {
         popup.style.display = 'flex';
         document.body.style.overflow = 'hidden';
         popup.style.overflow = 'scroll';
+        document.getElementById("mobile-menu-button").style.background = "#E8E8E8";
+        document.getElementById("mobile-burger-menu").style.display = "none";
+        document.getElementById("mobile-burger-cross").style.display = "block";
     }
 
 }

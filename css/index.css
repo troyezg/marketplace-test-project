@@ -959,7 +959,7 @@ h6 {
     height: 40px;
 
     background: #4888FF;
-    border: 1px solid #4888FF;
+    border: none;
     border-radius: 5px;
 
     display: flex;
@@ -1323,6 +1323,10 @@ h6 {
     align-items: center;
 
     color: #343A3F;
+}
+
+#mobile-burger-cross {
+    display: none;
 }
 
 /* Adaptation starts here */
