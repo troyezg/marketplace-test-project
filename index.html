@@ -39,7 +39,7 @@
             <img class="header-wrapper__logo" src="./images/logo.svg" alt="Logo image" />
             <div class="header-wrapper__rows-wrapper">
                 <div class="header-wrapper__scrollable-wrapper">
-                    <button class="header-wrapper__menu-button">
+                    <button class="header-wrapper__menu-button" onclick="BigPopUp()">
                         <img class="menu-button__icon" src="./images/menu-icon.svg" alt="Menu icon" />
                     </button>
                     <div class="header-wrapper__search-wrapper" >
@@ -167,11 +167,69 @@
 
     </section>
     <div class="small-popup" id="small-popup">
-        <button class="small-popup__button"><span class="hover-animation">ИгроМИР</span></button>
-        <button class="small-popup__button"><span class="hover-animation">Мероприятия</span></button>
-        <button class="small-popup__button"><span class="hover-animation">Мастер-классы</span></button>
     </div>
-    <div class="popup-closer" id="popup-closer" onclick="CloseSmallPopUp()" onscroll="CloseSmallPopUp()"></div>
+    <div class="big-popup" id="big-popup">
+        <div class="big-popup__categories">
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/mobile-2-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Смартфоны и гаджеты</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/laptop-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Ноутбуки и компьютеры</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/tv-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Телевизоры и цифровое ТВ</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/audio-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Аудиотехника</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/fire-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Акции</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+            <button class="categories__stroke-wrapper" onclick="OpenCategorie(1)">
+                <span class="stroke-wrapper__text-icon-wrapper">
+                    <img src="./images/new-icon.svg" class="stroke-wrapper__icon" alt="mobile-icon">
+                    <span class="stroke-wrapper__text">Новинки</span>
+                </span>
+                <svg class="stroke-wrapper__arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                                     
+            </button>
+        </div>
+        <div class="big-popup__items" id="big-popup-items">
+            
+        </div>
+    </div>
+    <div class="popup-closer" id="popup-closer" onclick="ClosePopUps()" onscroll="ClosePopUps()"></div>
 </body>
 <script src="./js/index.js"></script>
 </html>
